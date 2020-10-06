@@ -6,21 +6,31 @@
     <title>Form Basic</title>
 </head>
 <body>
-    <form action="">
-    <h3 style="background-color: orange; text-align: center;">SỞ THÍCH CỦA BẠN</h3>
-     Họ và tên : <input type="text" name="yourname"> <br>
-     Email : <input type="email" name="email">
-    <h4>Sở thích :</h4>
-    <input type="checkbox" name="hobby" > Thể Thao
-    <input type="checkbox" name="hobby"> Âm Nhạc
-    <input type="checkbox" name="hobby"> Đọc Sách <br>
-    <input type="checkbox" name="hobby"> Lướt Web
-    <input type="checkbox" name="hobby"> Chơi Game
-    <input type="checkbox" name="hobby"> Điện Ảnh <br>
-    <input type="checkbox" name="hobby"> Du Lịch <br>
-    <input type="submit" value="Gửi Thông Tin">
-    <input type="reset" value="Nhập Lại"> 
-    </form>
-
+    <div style="height: 500px; width: 550px;">
+        <div style="width:100%"><h3 style="background-color: orange; text-align: center;">SỞ THÍCH CỦA BẠN</h3></div>
+        <form action="">
+        <div style="width: 20%; float: left; height: 400px;">
+        <p style="color: blue;"> Họ và Tên :</p>
+        <p style="color: blue;"> Email : </p>
+        <p style="color: blue;">Sở thích :</p>
+        </div>
+        <div style="width: 80%;">
+            <br>
+        <input type="text" name="yourname"> <br> <br>
+        <input type="email" name="email"> 
+        <p style="color: red;">
+        <input type="checkbox" name="hobby"> Thể Thao
+        <input type="checkbox" name="hobby"> Âm Nhạc
+        <input type="checkbox" name="hobby"> Đọc Sách <br>
+        <input type="checkbox" name="hobby"> Lướt Web
+        <input type="checkbox" name="hobby"> Chơi Game
+        <input type="checkbox" name="hobby"> Điện Ảnh <br>
+        <input type="checkbox" name="hobby"> Du Lịch <br>
+        </p>
+        <input type="submit" value="Gửi Thông Tin">
+        <input type="reset" value="Nhập Lại">
+        </div> 
+        </form>
+    </div>
 </body>
 </html>
