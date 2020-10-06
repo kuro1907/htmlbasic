@@ -1,0 +1,44 @@
+#th1 {
+    background-color: yellow;
+    font-family: 'Patua One', cursive;
+    font-size:16px;
+    font-weight:400;
+    text-align:center;
+    padding:20px;
+    border-color: black;
+    border: 1px solid;
+}
+#th2 {
+    background-color: orange;
+    font-family: 'Patua One', cursive;
+    font-size:16px;
+    font-weight:400;
+    text-align:center;
+    padding:20px;
+    border-color: black;
+    border: 1px solid;
+}
+tr td {
+    background-color: #e0e0e0;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+td th{
+    padding: 20px;
+    border: 1px solid black;
+}
+
+td{
+    font-family: 'Open Sans', sans-serif;
+    font-weight:400;
+    color:#5f6062;
+    font-size:13px;
+    padding:20px 20px 20px 20px;
+    border:1px solid black;
+    text-align: center;
+}
+#th3{
+    border: 1px solid black;
+}
