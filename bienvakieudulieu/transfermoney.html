@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ứng dụng chuyển đổi tiền tệ</title>
+    <script src="transfer.js"></script>
+    <link rel="stylesheet" href="transfer.css" type="text/css">
+</head>
+<body>
+    <table>
+        <tr>
+            <th>Amount</th>
+            <th>From Currency</th>
+            <th>To Currency</th>
+            <th></th>
+        </tr>
+        <tr>
+            <form action="transfermoney.html" id="transfer" name="cd" method="GET">
+                <td>
+                    <input type="number" name="" value="1" id="sotien">
+                </td>
+                <td>
+                    <select name="cd1" id="">
+                        <option value="1">VND</option>
+                        <option value="2">USD</option>
+                    </select>
+                </td>
+                <td>
+                    <select name="cd2" id="">
+                        <option value="1">VND</option>
+                        <option value="2">USD</option>
+                    </select>
+                </td>
+            
+                <td>
+                    <input type="submit" value="Convert" onclick="chuyendoi()">
+                </td>
+            </form>
+        </tr>
+    </table>
+    <script>
+        var x = document.getElementById('sotien').Value;
+        function chuyendoi(){
+            y = x*23000
+            alert("Số tiền là : " + y) ;
+        }
+    </script>
+</body>
+</html>
