@@ -16,18 +16,18 @@
             <th></th>
         </tr>
         <tr>
-            <form action="transfermoney.html" id="transfer" name="cd" method="GET">
+            <form action="transfermoney.html" id="" name="cd" method="GET">
                 <td>
                     <input type="number" name="" value="1" id="sotien">
                 </td>
                 <td>
-                    <select name="cd1" id="">
+                    <select name="cd1" id="cd1">
                         <option value="1">VND</option>
                         <option value="2">USD</option>
                     </select>
                 </td>
                 <td>
-                    <select name="cd2" id="">
+                    <select name="cd2" id="cd2">
                         <option value="1">VND</option>
                         <option value="2">USD</option>
                     </select>
@@ -40,11 +40,24 @@
         </tr>
     </table>
     <script>
-        var x = document.getElementById('sotien').Value;
         function chuyendoi(){
-            y = x*23000
-            alert("Số tiền là : " + y) ;
+        var z = parseInt(document.getElementById('sotien').Value);
+        var x = parseInt(document.getElementById('cd1').Value);
+        var y = parseInt(document.getElementById('cd2').Value);
+        if (x==1){
+            if(y==1){
+                alert ('Số tiền VND là : ' + z);
+            }else{
+                alert ('Số tiền USD là : ' + z*23000);
+            }
+        }else{
+            if(y==1){
+                alert ('Số tiền là : ' + z/23000);
+            }else{
+                alert ('Số tiền là : ' + z);
+            }
         }
+    }
     </script>
 </body>
 </html>
