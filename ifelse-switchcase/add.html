@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button type="submit" onclick="kiemtra()">Kiểm tra giá trị </button>
+    <button type="submit" onclick="message()">Message </button>
+    <script>
+        function kiemtra() {
+            let a = parseInt(prompt("Nhập A: "));
+            let b = parseInt(prompt("Nhập B: "));
+            result = (a + b < 4) ? 'Below' : 'Over';
+            alert(result);
+        }
+
+        function message() {
+            let login = prompt("Nhập chức vụ : ");
+            let message = (login == 'Employee') ?
+                'Hello' :
+                (login == 'Director') ?
+                'Greetings' :
+                (login == '') ?
+                'No login' :
+                'Không thể nhận diện';
+            alert(message);
+        }
+    </script>
+</body>
+
+</html>
