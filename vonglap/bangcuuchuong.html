@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let sout, i, j;
+        sout = "<table border='2' width='700' cellspacing='0' cellpadding='5'>";
+        i = 1;
+        j = 2;
+        while (i <= 10) {
+            sout = sout + "<tr>";
+            while (j <= 9) {
+                sout = sout + "<td>" + j + 'x' + i + '=' + i * j + "</td>";
+                j++;
+            }
+            sout = sout + "</tr>";
+            j = 2;
+            i++;
+        }
+        sout = sout + "</table>";
+        document.write(sout);
+    </script>
+</body>
+
+</html>
