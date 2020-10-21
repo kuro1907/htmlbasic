@@ -1,0 +1,25 @@
+form {
+    background: white;
+    margin: 0 auto;
+    width: 300px;
+    padding: 40px;
+    border-radius: 5px;
+}
+
+form table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+form table tr,
+form table td {
+    border: 1px solid #eee;
+}
+
+form table input {
+    width: 100%;
+    display: block;
+    border: 0;
+    font-size: 16px;
+    color: blue;
+}
