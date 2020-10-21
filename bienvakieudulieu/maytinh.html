@@ -1,37 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator</title>
 </head>
+
 <body>
     <h2>Caculator</h2>
-    <form action="maytinh.html" name="" id="" method="GET">
-        <input type="number" name="input1" id="input1" value="">
-        <input type="number" name="input2" id="input2" value="">
-        <br>
-        <button type="submit" onclick="cong()">Addition(+)</button>
-        <input type="submit" value="Subtraction(-)" onclick="tru()">
-        <input type="submit" value="Multiplication(X)" onclick="nhan()">
-        <input type="submit" value="Divition(/)" onclick="chia()">
-        <p id="hienthi"></p>
-    </form>
+    <input type="number" id="input1" value="">
+    <input type="number" id="input2" value="">
+    <br>
+    <button type="submit" onclick="cong()">Addition(+)</button>
+    <button type="submit" onclick="tru()">Subtraction(-)</button>
+    <button type="submit" onclick="nhan()">Multiplication(X)</button>
+    <button type="submit" onclick="chia()">Divition(/)</button>
+    <p id="hienthi"></p>
     <script>
-        var A = parseInt(document.getElementById('input1'));
-        var B = parseInt(document.getElementById('input2'));
-        function cong(){
-            document.getElementById('hienthi').innerHTML=A+B;
+        function cong() {
+            let x = parseInt(document.getElementById('input1').value);
+            let y = parseInt(document.getElementById('input2').value);
+            document.getElementById('hienthi').innerHTML = x + y
         }
-        function tru(){
-            document.getElementById('hienthi').innerHTML=A-B;
+
+        function tru() {
+            let x = parseInt(document.getElementById('input1').value);
+            let y = parseInt(document.getElementById('input2').value);
+            document.getElementById('hienthi').innerHTML = x - y
         }
-        function nhan(){
-            document.getElementById('hienthi').innerHTML=A*B;
+
+        function nhan() {
+            let x = parseInt(document.getElementById('input1').value);
+            let y = parseInt(document.getElementById('input2').value);
+            document.getElementById('hienthi').innerHTML = x * y
         }
-        function chia(){
-            document.getElementById('hienthi').innerHTML=A/B;
+
+        function chia() {
+            let x = parseInt(document.getElementById('input1').value);
+            let y = parseInt(document.getElementById('input2').value);
+            document.getElementById('hienthi').innerHTML = x / y
         }
     </script>
 </body>
+
 </html>
