@@ -86,14 +86,9 @@ function checkInput() {
   let c = parseFloat(document.getElementById("inputC").value);
   if (a + b > c && b + c > a && a + c > b && a > 0 && b > 0 && c > 0) {
     document.getElementById("demo9").innerHTML =
-      "a ,b ,c là cạnh của một tam giác";
+      "a, b, c là cạnh của một tam giác";
   } else {
     document.getElementById("demo9").innerHTML =
-      "a ,b ,c không phải là cạnh của một tam giác";
+      "a, b, c không phải là cạnh của một tam giác";
   }
-}
-
-function checkValue() {
-  let a = parseFloat(document.getElementById("value").value);
-  switch ((a>0 && a=<50)?1:())
 }
