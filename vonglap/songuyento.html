@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h3>20 Số nguyên tố đầu tiên là :</h3>
+    <p id="display"></p>
+    <script>
+      let number = 20;
+      let count = 0;
+      let num = 2;
+      while (count < number) {
+        let flag = true;
+        for (let i = 2; i < num; i++) {
+          if (num % i == 0) {
+            flag = false;
+            break;
+          }
+        }
+        if (flag) {
+          document.getElementById("display").innerHTML += num + "<br>" + " ";
+          count++;
+        }
+        num++;
+      }
+    </script>
+  </body>
+</html>
