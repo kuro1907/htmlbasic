@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Từ Điển</title>
+  </head>
+  <body>
+    <h3>CHÀO MỪNG ĐẾN VỚI KHO TỪ ĐIỂN</h3>
+    <p>Nhập từ bạn muốn tra :</p>
+    <input type="text" name="" id="input" />
+    <button type="submit" onclick="translate()">Tra cứu</button>
+    <p>Kết quả:</p>
+    <input type="text" name="" id="output" disabled />
+    <script>
+      function translate() {
+        let input = document.getElementById("input");
+        let eng = ["hello", "world", "i"];
+        let vie = ["xin chào", "thế giới", "a"];
+        for (let i = 0; i < input.length; i++) {
+          if (eng.indexOf(input[i]) !== 1) {
+            document.getElementById("output").innerHTML = vie[i];
+          } else {
+            document.getElementById("output").innerHTML = "Không có kết quả.";
+          }
+        }
+      }
+    </script>
+  </body>
+</html>

@@ -21,4 +21,15 @@ function display2() {
   let input = prompt("Nhập dữ liệu:");
   let UPPER = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
   let LOWER = "abcdefghijklmnopqrstuvwxyz";
+  var result = [];
+  for (let i = 0; i < input.length; i++) {
+    if (UPPER.indexOf(input[i]) !== -1) {
+      result.push(input[i].toLowerCase());
+    } else if (LOWER.indexOf(input[i]) !== -1) {
+      result.push(input[i].toUpperCase());
+    } else {
+      result.push(input[i]);
+    }
+  }
+  document.getElementById("demo3").innerHTML = result.join("&nbsp");
 }

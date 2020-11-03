@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Find Prime</title>
+  </head>
+  <body>
+    <input type="number" name="" id="value" />
+    <button type="submit" onclick="checkPrime()">Kiểm tra</button>
+    <script>
+      function isPrime(number) {
+        let flag = true;
+        for (let i = 2; i < number; i++) {
+          if (number % i == 0) {
+            flag = false;
+          }
+        }
+        if (flag) {
+          alert("Số " + number + " là số nguyên tố");
+        } else {
+          alert("Số " + number + " không phải số là số nguyên tố");
+        }
+      }
+      function checkPrime() {
+        let input = parseInt(document.getElementById("value").value);
+        if (input > 1) {
+          isPrime(input);
+        } else {
+          alert("Số " + input + " không phải là số nguyên tố.");
+        }
+      }
+    </script>
+  </body>
+</html>
