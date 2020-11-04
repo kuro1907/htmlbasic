@@ -9,17 +9,18 @@
     <h3>CHÀO MỪNG ĐẾN VỚI KHO TỪ ĐIỂN</h3>
     <p>Nhập từ bạn muốn tra :</p>
     <input type="text" name="" id="input" />
-    <button type="submit" onclick="translate()">Tra cứu</button>
+    <button type="submit" onclick="trans()">Tra cứu</button>
     <p>Kết quả:</p>
-    <input type="text" name="" id="output" disabled />
+    <p id="output"></p>
     <script>
-      function translate() {
-        let input = document.getElementById("input");
+      function trans() {
+        let input = document.getElementById("input").value;
         let eng = ["hello", "world", "i"];
         let vie = ["xin chào", "thế giới", "a"];
-        for (let i = 0; i < input.length; i++) {
-          if (eng.indexOf(input[i]) !== 1) {
+        for (let i = 0; i < eng.length; i++) {
+          if (input == eng[i]) {
             document.getElementById("output").innerHTML = vie[i];
+            break;
           } else {
             document.getElementById("output").innerHTML = "Không có kết quả.";
           }

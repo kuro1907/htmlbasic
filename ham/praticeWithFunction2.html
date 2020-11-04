@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pratice With Function 2</title>
+  </head>
+  <body>
+    <h3>Bài 1 : Tính bình phương 1 số bất kỳ</h3>
+    <input
+      type="number"
+      oninput="square(this.value)"
+      onchange="square(this.value)"
+    />
+    <p id="display1"></p>
+    <h3>Bài 2 : Tính diện tích / chu vi hình tròn</h3>
+    <input type="number" id="radius" />
+    <button type="submit" onclick="calculate()">Kết quả</button>
+    <p id="area"></p>
+    <p id="perimeter"></p>
+    <h3>Bài 3 : Tính giai thừa 1 số bất kỳ</h3>
+    <input type="number" id="input" />
+    <button type="submit" onclick="factorial()">Kết quả</button>
+    <p id="display2"></p>
+    <h3>Bài 4 : Kiểm tra có phải ký tự số hay không ?</h3>
+    <input type="text" id="input2" />
+    <button type="submit" onclick="checkText()">Kiểm tra</button>
+    <script src="praticeWithFunction2.js"></script>
+    <h3>Bài 5 : Kiểm tra Min 3 số nguyên bất kỳ</h3>
+    <p>Nhập số thứ nhất :</p>
+    <input type="number" id="number1" />
+    <p>Nhập số thứ hai :</p>
+    <input type="number" id="number2" />
+    <p>Nhập số thứ ba :</p>
+    <input type="number" id="number3" />
+    <br /><br />
+    <button type="submit" onclick="checkMin()">Kiểm tra</button>
+    <p id="display3"></p>
+    <h3>Bài 6: Kiểm tra số nguyên dương bát kỳ</h3>
+    <input type="number" id="numb" />
+    <button type="submit" onclick="checkNum()">Kiểm tra</button>
+    <p id="display4"></p>
+  </body>
+</html>
