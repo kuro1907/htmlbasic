@@ -58,3 +58,36 @@ function checkNum() {
     result.innerHTML = "Vui lòng nhập 1 số nguyên dương";
   }
 }
+
+function reverses() {
+  let n1 = Number(document.getElementById("numb1").value);
+  let n2 = Number(document.getElementById("numb2").value);
+  if (Number.isInteger(n1) && Number.isInteger(n2)) {
+    let n = n1;
+    n1 = n2;
+    n2 = n;
+    document.getElementById("display5").innerHTML =
+      "Kết quả là : " + n1 + "," + n2;
+  } else {
+    document.getElementById("display5").innerHTML = "Vui lòng nhập số nguyên";
+  }
+}
+
+function reverseArray() {
+  let arr = document.getElementById("array").value.split("");
+  console.log(arr);
+  document.getElementById("display6").innerHTML = "Kết quả: " + arr.reverse();
+}
+
+function checkArray() {
+  let arr = document.getElementById("array1").value.split("");
+  let txt = document.getElementById("text1").value;
+  let count = 0;
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] == txt) {
+      count++;
+    }
+  }
+  document.getElementById("display7").innerHTML =
+    "Ký tự " + txt + " xuất hiện " + count + " lần.";
+}

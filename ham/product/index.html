@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product</title>
+    <link rel="stylesheet" href="product.css" type="text/javascript" />
+  </head>
+  <body>
+    <h3>Add New Product</h3>
+    <input type="text" id="nameProduct" placeholder="New Product" />
+    <button type="submit" onclick="addProduct()">Add</button>
+    <h3>Display All Product</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>Product Name</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody id="tbProducts"></tbody>
+    </table>
+    <script src="product.js"></script>
+  </body>
+</html>
